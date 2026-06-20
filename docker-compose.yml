@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tchat-db
+    environment:
+      POSTGRES_USER: chatapp
+      POSTGRES_PASSWORD: chatapp123
+      POSTGRES_DB: terminal_chat
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  pgdata:

@@ -1,0 +1,161 @@
+# ============================================
+# Dependencies
+# ============================================
+vendor/
+node_modules/
+
+# ============================================
+# Build Output
+# ============================================
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# ============================================
+# Go Specific
+# ============================================
+go.work
+go.work.sum
+
+# ============================================
+# Environment & Config
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+data/
+pgdata/
+
+# ============================================
+# Docker
+# ============================================
+docker-compose.override.yml
+
+# ============================================
+# IDE & Editor
+# ============================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OS Generated
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# Logs & Temp
+# ============================================
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+logs/
+
+# ============================================
+# Shell History
+# ============================================
+.history
+.bash_history
+.zsh_history
+.zhistory
+.*_history
+
+# ============================================
+# Coverage & Testing
+# ============================================
+*.cover
+*.coverprofile
+coverage/
+coverage.*
+test-reports/
+
+# ============================================
+# Archive Files
+# ============================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ============================================
+# Certificate & Keys
+# ============================================
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# ============================================
+# Project Specific
+# ============================================
+# Database volumes
+docker/postgres_data/
+
+# Build artifacts
+terminal-chat
+server
+client
+
+# Config files that may contain secrets
+config.yaml
+config.yml
+config.json
+secrets.yaml
+secrets.yml
+
+# ============================================
+# Documentation Builds
+# ============================================
+docs/_build/
+docs/node_modules/
