@@ -42,7 +42,6 @@ func New() (*DB, error) {
 		}
 
 		db.Close()
-		fmt.Printf("Waiting for database... attempt %d/10\n", i+1)
 		time.Sleep(2 * time.Second)
 	}
 
@@ -55,7 +54,7 @@ func New() (*DB, error) {
 	db.SetMaxIdleConns(5)
 	db.SetConnMaxLifetime(5 * time.Minute)
 
-	fmt.Println("Database connected successfully")
+	// Database connected successfully
 
 	return &DB{Conn: db}, nil
 }
