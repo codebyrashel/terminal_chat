@@ -144,8 +144,6 @@ docker/postgres_data/
 
 # Build artifacts
 terminal-chat
-server
-client
 
 # Config files that may contain secrets
 config.yaml
